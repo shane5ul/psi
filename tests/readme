@@ -1,0 +1,6 @@
+See accompanying paper for full reference to the following test problems
+
+1. Single mode Maxwell solid (g1.dat and l1.dat)
+2. PMMA from Schapery 1962, Park and Kim 1999, and Loy et al., 2015. (g2.dat)
+3. PS ring from Kapnistos 2008 (g3.dat)
+4. Asphalt mixture from Zhang et al. 2018 (l4.dat)
