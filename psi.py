@@ -394,7 +394,7 @@ if __name__ == '__main__':
     # G -> J
     j, lam = fileG2J('tests/g2.dat', savefile=True)
 
-    t = np.geomspace(1e-3, 1e3)
+    t = np.geomspace(1e-1, 1e7)
     J = evalJtProny(t, j, lam, isPlot=True)
 
     # J -> G
