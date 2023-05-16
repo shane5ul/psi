@@ -10,7 +10,7 @@ The modulus and compliance are represented using a Prony series. The convention 
 
 **Solids**
 
-$$G(t) = G_e + \sum\limits_{k=1}^{N}\, g_k e^{-t/\tau_k}$$
+$$G(t) = G_e + \sum\limits_{k=1}^{N} g_k e^{-t/\tau_k}$$
 $$J(t) = J_e - \sum\limits_{k=1}^{N} j_{k} e^{-t/\lambda_{k}}$$
 
 `g = ` $[g_1, g_2, \cdots g_N, G_e]$ and `tau = ` $[\tau_1, \tau_2, \cdots, \tau_N]$
@@ -19,7 +19,7 @@ $$J(t) = J_e - \sum\limits_{k=1}^{N} j_{k} e^{-t/\lambda_{k}}$$
 
 **Liquids**
 
-$$G(t) = \sum\limits_{k=1}^{N}\, g_k e^{-t/\tau_k}$$
+$$G(t) = \sum\limits_{k=1}^{N} g_k e^{-t/\tau_k}$$
 $$J(t) = J_e + \eta_0^{-1} t - \sum\limits_{k=1}^{N-1} j_{k} e^{-t/\lambda_{k}}$$
 
 `g = ` $[g_1, g_2, \cdots g_N]$ and `tau = ` $[\tau_1, \tau_2, \cdots, \tau_N]$
