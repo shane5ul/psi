@@ -41,12 +41,17 @@ Alternatively, instructions for interconversion can be directly included in `psi
 `python3 psi.py`
  
 If you have arrays `(g, tau)` or `(j, lam)` then for interconversion then use
+
 `j, lam = findJtProny(g, tau)`
+
 `g, tau = findGtProny(j, lam)`
 
 If you have a file like the output `dmodes.dat` generated from `pyReSpect-time` or `pyJt` 
+
 `j, lam = fileG2J(fname)`
+
 `g, tau = fileJ2G(fname)`
+
 where `fname` points to the file containing the modes. The first line should have # Ge, Je, invEta0 info if nonzero. See included examples.
 \# Je = 1.0
 \# Ge = 1.0
