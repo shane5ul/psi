@@ -62,6 +62,7 @@ Some example files are included in the tests/ folder.
 If the Prony series $G(t)$ or $J(t)$ can be evaluated using,
 
 `G = evalGtProny(t, g, tau, isPlot=True)`
+
 `J = evalJtProny(t, j, lam, isPlot=True)`
 
 ## Pre-requisites
