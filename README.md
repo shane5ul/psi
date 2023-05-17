@@ -53,8 +53,11 @@ If you have a file like the output `dmodes.dat` generated from `pyReSpect-time` 
 `g, tau = fileJ2G(fname)`
 
 where `fname` points to the file containing the modes. The first line should have # Ge, Je, invEta0 info if nonzero. See included examples.
+
 \# Je = 1.0
+
 \# Ge = 1.0
+
 \# Je, invEta0 = 7.3970e-05 9.9080e-05
 
 Some example files are included in the tests/ folder.
