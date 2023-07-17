@@ -105,6 +105,41 @@ def evalGtProny(t, g, tau, isPlot=False):
 
     return G
 
+def evalGstProny(w, g, tau, isPlot=False):
+    """
+    This evaluates Gp(w) and Gpp(w) given the DRS g = [g1, ..., g_nmodes, Ge]
+    """
+    Gp      = np.zeros(len(w))
+    Gpp     = np.zeros(len(w))
+    nmodes = len(tau)
+
+    # solid or liquid
+    if len(g) > nmodes:
+        Gp += g[nmodes] # N = N_s + 1
+        
+    for i in range(nmodes):
+        wt   = w * tau[i]
+        Gp  += g[i] * wt**2/(1+wt**2)
+        Gpp += g[i] * wt/(1+wt**2)
+            
+    if isPlot:
+        plt.plot(w, Gp)
+        plt.plot(w, Gpp)
+
+        plt.ylim(max(np.min(Gp),np.amax(Gp)/1e6), None)
+
+        for i in range(nmodes):
+            plt.axvline(x=tau[i], c='gray', alpha=0.5)
+
+        plt.xscale('log')
+        plt.yscale('log')
+        plt.xlabel(r'$\omega$')
+        plt.ylabel(r'$G^{*}(\omega)$')
+        plt.tight_layout()
+        plt.show() 
+
+    return Gp, Gpp
+
 def readRelaxSpec(fname):
     """
     read input file containing relaxation spectrum
