@@ -1,7 +1,7 @@
 # PSI 
 PSI (**Prony Series Interconversion**) is a computer program for interconversion of relaxation modulus $G(t)$ and creep compliance $J(t)$. It is based on the method of Loy et al. (2015) with a few modifications:
 
-+ Shanbhag, "A computer program for interconversion of creep compliance and relaxation modulus", *submitted to Journal of Rheology* 
++ Shanbhag, "A computer program for interconversion of creep compliance and relaxation modulus", Journal of Rheology 67, 965–975 **2023** [doi: 10.1122/8.0000695]
 + Loy, de Hoog, and Anderssen, "Interconversion of Prony series for relaxation and creep", Journal of Rheology 59, 1261 **2015** [doi: 10.1122/1.4929398]
 
 ## Prony Series
