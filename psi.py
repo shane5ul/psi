@@ -24,8 +24,9 @@
 #        savefile = True saves the interconverted prony series to relaxSpect.dat or retardSpect.dat
 #
 #        To evaluate the Prony series use:
-#        G = evalGtProny(t, g, tau, isPlot)
-#        J = evalJtProny(t, j, lam, isPlot)
+#        G   = evalGtProny(t, g, tau, isPlot)
+#        J   = evalJtProny(t, j, lam, isPlot)
+#        Gst = evalGstProny(w, g, tau, isPlot)
 #
 
 
